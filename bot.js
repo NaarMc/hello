@@ -476,7 +476,7 @@ client.on('message' , message => {
 });
 client.on('message', PuP => {
   let args = PuP.content.split(" ").slice(1).join(" ")
-  if (PuP.content.startsWith(`${prefix}اسم السيرفر`)) {
+  if (PuP.content.startsWith(`${prefix}اسم`)) {
                 if (!PuP.member.hasPermission("MANAGE_SERVER"))  return;
                 if(!args) return PuP.channel.send('`**يرجي ادخال اسم السرفر الجديد**`');
                 PuP.guild.owner.send(`**ى تغيير اسم السرفر الي ${args}
